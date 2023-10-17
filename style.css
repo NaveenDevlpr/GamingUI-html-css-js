@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background: #050e2d;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 1000;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1aeeef;
+    border-radius: 5px;
+}
+header.sticky{
+    background: #1b2141;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) ;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style-type:none ;
+    margin: 10px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+
+header .action .searchBar{
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .action .searchBar i{
+    color: #050e2d;
+    margin: 5px;
+    font-size: 1.2em;
+
+}
+
+header .action .searchBar input{
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #222;
+    font-size: 1em;
+    margin-left: 12px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2{
+    font-size: 3.5em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.banner .bg .content p{
+    font-size: 1em;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a{
+    display: inline-block;
+    margin: 20px 0 ;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #1aeeef;
+    border-radius:5px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.banner .bg .content a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    border: none;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+.banner .bg img{
+    width: 450px;
+}
+
+
+.about{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+}
+
+.about .contentBox{
+    width: 50%;
+    margin: 20px;
+
+}
+
+
+.about .contentBox h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.about .contentBox p{
+    font-size: 1em;
+    text-align: justify;
+    max-width: 600px;
+   
+    color: #dbd9d9;
+   
+}
+
+.about img{
+    width: 450px;
+}
+.about .contentBox a{
+    display: inline-block;
+    margin: 20px 0 ;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #1aeeef;
+    border-radius:5px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.about .contentBox a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    border: none;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+
+
+.games{
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 40px auto;
+   
+}
+
+.games h2{
+    color: #fff;
+    margin: 10px 0;
+}
+
+
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.games ul li{
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin: 5px;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.games ul li.active{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+.games .cardBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.games .cardBox .card-content{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    overflow: hidden;
+    background: #1b2141;
+
+}
+
+.games .cardBox .card-content img{
+    width: 100%;
+    height: 250px;
+    object-fit:scale-down;
+    margin-top: 20px;
+}
+
+.games .cardBox .card-content .content {
+    padding: 10px;
+}
+
+.games .cardBox .card-content .content h4{
+    margin: 15px 0;
+    color: #fff;
+}
+
+.games .cardBox .card-content  .progress-bar{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #35407e;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.games .cardBox .card-content  .progress-bar span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #1aeeef;
+    box-shadow: 0 0 10px #1aeeef;
+    transform-origin: left;
+} 
+
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1) ;
+    }
+}
+
+.games .cardBox .card-content .info{
+    border-top: 2px solid #35407e;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.games .cardBox .card-content .info p{
+  font-size: 1em;
+  color:#fff   
+}
+
+.games .cardBox .card-content .info p span{
+    color: #1aeeef;
+}
+
+.games .cardBox .card-content .info a{
+    display: inline-block;
+    margin: 20px 0 ;
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #1aeeef;
+    border-radius:5px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.games .cardBox .card-content .info a:hover {
+    background: #1aeeef;
+    color: #050e2d;
+    border: none;
+    box-shadow: 0 0 10px #1aeeef;
+}

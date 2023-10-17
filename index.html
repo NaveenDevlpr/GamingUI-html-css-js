@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GamerSite</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <a href="" class="logo">Gammers</a>
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Tournaments</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+
+            <div class="action">
+                <div class="searchBar">
+                    <a href=""><i class='bx bx-search'></i></a>
+                    <input type="text" placeholder="Search Games">
+                </div>
+            </div> 
+            <div class="toggleMenu">
+            </div>
+        </header>
+
+        <!--Home Banner-->
+        <div class="banner">
+            <div class="bg">
+                <div class="content">
+                    <h2>The Best Spot for<br>
+                    Game lovers</h2>
+                    <p>This is a great medium to promote a video game, create an online space that unites gamers.</p>
+                    <a href="" class="btn">Join Now</a>
+                </div>
+                <img src="images/gtaV.png">
+            </div>
+        </div>
+
+        <!--About banner-->
+        <div class="about">
+            <div class="contentBox">
+                <h2>About us</h2>
+                <p>Welcome to Gammers, where we share information related to BLOG. We're dedicated to providing you the 
+                    very best information and knowledge of the above-mentioned topics. 
+
+                    We hope you found all of the information on Gammers helpful, as we love to share them with you.
+                    
+                    If you require any more information or have any questions about our site, please feel free to contact us
+                    by email at naveenmk675@gmail.com.</p>
+                    <a href="">Read more</a>
+            </div>
+            <img src="images/joystick.png">
+        </div>
+
+        <!--games banner-->
+        <div class="games">
+            <h2>Games<h2>
+            <ul>
+                <li class="list active">All</li>
+                <li class="list">PC Games</li>
+                <li class="list">All</li>
+            </ul>
+
+            <div class="cardBox">
+                <div class="card-content" data-item="pc">
+                    <img src="images/wwe2k.jpg">
+                    <div class="content">
+                        <h4>WWE</h4>
+                        <div class="progress-bar"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$100</span></p>
+                            <a href="">Play now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-content" data-item="pc">
+                    <img src="images/gta5.png">
+                    <div class="content">
+                        <h4>GTA5</h4>
+                        <div class="progress-bar"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$100</span></p>
+                            <a href="">Play now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-content" data-item="pc">
+                    <img src="images/wwe2k.jpg">
+                    <div class="content">
+                        <h4>WWE</h4>
+                        <div class="progress-bar"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$100</span></p>
+                            <a href="">Play now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+            window.addEventListener('scroll',function(){
+                var header=document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            })
+        </script>
+    </body>
+</html>
